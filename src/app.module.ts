@@ -16,9 +16,9 @@ import { TypeOrmModuleOptions } from '@nestjs/typeorm/dist/interfaces/typeorm-op
         type: 'mysql', // Tipo de base de datos (MySQL en este caso)
         host: 'localhost', // Host de la base de datos
         port: 3306, // Puerto de la base de datos
-        username: 'tu_usuario', // Nombre de usuario de la base de datos
-        password: 'tu_contraseña', // Contraseña de la base de datos
-        database: 'nombre_de_tu_base_de_datos', // Nombre de la base de datos
+        username: 'root', // Nombre de usuario de la base de datos
+        password: '', // Contraseña de la base de datos
+        database: 'products_db', // Nombre de la base de datos
         entities: [__dirname + '/**/*.entity{.ts,.js}'], // Ruta de las entidades de TypeORM
         synchronize: true, // Sincronizar automáticamente las entidades con la base de datos (solo en desarrollo)
       } as TypeOrmModuleOptions),
